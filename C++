@@ -55,3 +55,47 @@ int main()
     }
     return 0;
 }
+
+
+/*
+int aa, bb;
+    while(cin>>aa>>bb)
+{
+    cout << aa+ bb << endl;
+}
+    return 0;
+    
+    
+    
+    
+    
+    
+  while (cin >> m >> n && (m != -1 || n != -1))
+    {
+
+        for (int i = 0; i<m; i++)
+        {
+            scanf("%s", map1[i]);
+            for (int j = 0; j<n; j++)
+            {
+                bin[i][j] = i*n + j;//对父亲节点进行初始化  
+            }
+        }
+
+        for (int i = 0; i<m; i++)
+            for (int j = 0; j<n; j++)
+            {
+                judge(i, j);
+            }
+        int count = 0;
+        for (int i = 0; i<m; i++)
+            for (int j = 0; j<n; j++)
+            {
+                if (bin[i][j] == i*n + j)//判断没有合并的集合，并计算没合并集合的个数，每个集合就是一个连通分支数  
+                    count++;
+            }
+        cout << count << endl;
+    }
+
+    return 0;
+*/
